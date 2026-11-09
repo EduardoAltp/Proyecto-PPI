@@ -26,6 +26,7 @@ return new class extends Migration
     $table->string('estado')->default('disponible');
     $table->string('vin')->unique();
     $table->string('folio')->unique();
+    $table->softDeletes();
     $table->timestamps();
 });
     }
